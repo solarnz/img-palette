@@ -243,3 +243,33 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+
+.demoimg {
+    max-width: 200px !important;
+    margin-right: 50px;
+    display: inline-block;
+}
+
+.color {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    border: 1px solid;
+    box-shadow: black 1px 1px;
+}
+
+.demo-container {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.demo-list {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
