@@ -28,4 +28,6 @@ window.onload = function() {
     calculateImage('rainbow');
     calculateImage('operahouse');
     calculateImage('rose');
+    calculateImage('pohutukawa');
+    calculateImage('kauri');
 };
