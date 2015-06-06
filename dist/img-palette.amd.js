@@ -237,8 +237,8 @@ define("ImgPalette", [], function() { return /******/ (function(modules) { // we
 	    _classCallCheck(this, Palette);
 
 	    this.image = image;
-	    this.quality = quality;
-	    this.colorCount = colorCount;
+	    this.quality = Math.max(1, quality);
+	    this.colorCount = Math.max(1, colorCount);
 
 	    this.swatches = this.generateSwatches();
 	    this.highestPopulation = this.findMaxPopulation();
@@ -267,11 +267,7 @@ define("ImgPalette", [], function() { return /******/ (function(modules) { // we
 	      for (var i = 0; i < canvas.pixelCount; i += this.quality) {
 	        var offset = i * 4;
 	        var rgb = [imagePixels[offset], imagePixels[offset + 1], imagePixels[offset + 2]];
-	        var alpha = imagePixels[offset + 3];
-
-	        if (alpha >= 125 && rgb[0] <= 250 && rgb[1] <= 250 && rgb[2] <= 250) {
-	          pixelData.push(rgb);
-	        }
+	        pixelData.push(rgb);
 	      }
 
 	      var cmap = (0, _quantize2['default'])(pixelData, this.colorCount);
