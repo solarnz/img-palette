@@ -1,7 +1,7 @@
 img-palette
 ===========
 
-A javascript implementation of the Pallet class from the Android Support Library
+A javascript implementation of the Palette class from the Android Support Library
 
 Installation
 ------------
@@ -10,6 +10,10 @@ Installation
 
 Overview
 --------
+
+### Demo
+
+There is a demo available [here](http://solarnz.github.io/img-palette/ "Demo") with the source [here](https://github.com/solarnz/img-palette/blob/gh-pages/scripts/example.js).
 
 ### Usage
 
