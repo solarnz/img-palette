@@ -1,6 +1,6 @@
 {
   "name": "img-palette",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "A port of the Android Palette class to javascript",
   "main": "dist/img-palette.js",
   "scripts": {
